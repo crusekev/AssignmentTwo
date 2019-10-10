@@ -1,5 +1,8 @@
 /* 
-This program prompts the user to enter the weight of an object on Earth. It will then ask the user to enter the name of a celestial body. Based on the name entered, the program will compute the corresponding weight on that celestial body by multiplying the user’s value with the celestial body’s “weight factor” 
+This program prompts the user to enter the weight of an object on Earth. It will then ask 
+the user to enter the name of a celestial body. Based on the name entered, the program will 
+compute the corresponding weight on that celestial body by multiplying the user’s value with 
+the celestial body’s “weight factor”.
  */
 
 #include <iostream>
@@ -18,7 +21,9 @@ int main() {
     std::cin >> question; //asks user to enter Yes or No
 
     /* 
-    The code block below checks the users input. If "Yes", it calls the weightFactor function again and asks if the would like to enter another conversion and asks the user for inpit. If the user enters "No", the program will terminate
+    The code block below checks the users input. If "Yes", it calls the weightFactor function 
+    again and asks if the would like to enter another conversion and asks the user for inpit. 
+    If the user enters "No", the program will terminate
      */
 
     while(question == "Yes" && question != "No") {
@@ -30,7 +35,10 @@ int main() {
 }
 
 /* 
-This function asks the user for the weight of an earth object and a celestial body. If the user enters a correct name, the function will multiply the celestial body the user entered by the earthWeight and return that value (planetWeight). If the user does not incorrect celestial body, the user gets an error.
+This function asks the user for the weight of an earth object and a celestial body. If the 
+user enters a correct name, the function will multiply the celestial body the user entered by 
+the earthWeight and return that value (planetWeight). If the user does not incorrect celestial 
+body, the user gets an error.
  */
 
 double weightFactor(double earthWeight, std::string celestialBody, double planetWeight) {
@@ -40,7 +48,9 @@ double weightFactor(double earthWeight, std::string celestialBody, double planet
     std::cin >> celestialBody; //asking user for celestial body
 
     /* 
-    If user enters a valid celestial body name, the supplied earth weight is multiplied by the celestial body's weight factor, then output that result (planetWeight). If the user does not enter a correct celestial body, they will get an error.
+    If user enters a valid celestial body name, the supplied earth weight is multiplied by 
+    the celestial body's weight factor, then output that result (planetWeight). If the user 
+    does not enter a correct celestial body, they will get an error.
      */
 
     if(celestialBody == "Mercury") {

@@ -26,11 +26,13 @@ int main() {
     If the user enters "No", the program will terminate
      */
 
-    while(question == "Yes" && question != "No") {
+    while(question == "Yes" || question == "yes") {
         weightFactor(earthWeight, celestialBody, planetWeight);
         std::cout << "Do you wish to enter another conversion?: ";
         std::cin >> question;
     }
+    if(question == "No" || question == "no")
+        return 1;
     return 0;
 }
 
